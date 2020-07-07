@@ -63,7 +63,7 @@ body{ position: relative; display: flex;justify-content: center; }
 
 @media screen and (min-width: 1030px) {
         .header video{height: 612px;}
-        .call {top: 30vh; width: 65vw;}
+        .call {top: 20vh; width: 65vw;}
         #form-chimp {height: 70vh;}
         .title-banner{font-size: 64px; width: 880px; flex-wrap: wrap; }
         .sub-title-banner{font-size: 20px; line-height: 1.3em; width: 784px; flex-wrap: wrap;}
