@@ -17,7 +17,7 @@ body {font-family: 'Roboto', sans-serif; font: 16px; width: 100%; height: 100%;}
 .top-bar .btn-inscreva{background-color: #FFC12A; padding: 15px 32px; border-radius: 4px; cursor: pointer; font-family: 'Roboto', sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 150%;}
 .top-bar a{cursor: pointer; color: #000;}
 .call {position: absolute; left: 0; right: 0; top: 20vh; margin: auto auto; width: 84vw; display: flex; flex-direction: column;}
-.title-live{    font-size: 35px; color: #fff;}
+.title-live{    font-size: 64px; color: #fff;}
 .title-banner{color: #FFFFFF; font-weight: bold; font-size: 64px; margin-bottom: .5em; width: 880px; flex-wrap: wrap; }
 .sub-title-banner{font-size: 20px; line-height: 1.3em; color: #FFFFFF; width: 784px; flex-wrap: wrap;}
 
@@ -72,7 +72,7 @@ body{ position: relative; display: flex;justify-content: center; }
 @media screen and (max-width: 768px){
         .top-bar .btn-inscreva{background-color: #FFC12A; padding: 15px 32px; border-radius: 4px; cursor: pointer; font-family: 'Roboto', sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 150%; margin-top: 10px;}
         .call {position: absolute; left: 0; right: 0; top: 25vh; margin: auto auto; width: 84vw; display: flex; flex-direction: column;}
-        .title-live { font-size: 26px; color: #fff; }
+        .title-live { font-size: 39px; color: #fff; }
         .title-banner{color: #FFFFFF; font-weight: bold; font-size: 39px; margin-bottom: .5em; width: 100%; flex-wrap: wrap;}
         .sub-title-banner{font-size: 20px; line-height: 1.3em; color: #FFFFFF; width: 100%; flex-wrap: wrap;}
 }
