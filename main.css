@@ -17,8 +17,8 @@ body {font-family: 'Roboto', sans-serif; font: 16px; width: 100%; height: 100%;}
 .top-bar .btn-inscreva{background-color: #FFC12A; padding: 15px 32px; border-radius: 4px; cursor: pointer; font-family: 'Roboto', sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 150%;}
 .top-bar a{cursor: pointer; color: #000;}
 .call {position: absolute; left: 0; right: 0; top: 30vh; margin: auto auto; width: 84vw;}
-.title-banner{color: #FFFFFF; font-weight: bold; font-size: 64px; margin-bottom: .5em; width: 880px; flex-wrap: wrap; }
-.sub-title-banner{font-size: 20px; line-height: 1.3em; color: #FFFFFF; width: 784px; flex-wrap: wrap;}
+.title-banner{color: #FFFFFF; font-weight: bold; font-size: 2.2em; margin-bottom: .5em; width: 880px; flex-wrap: wrap; }
+.sub-title-banner{font-size: 1.3; line-height: 1.3em; color: #FFFFFF; width: 784px; flex-wrap: wrap;}
 
 /* ----- Formulário ----- */
 
@@ -64,4 +64,6 @@ body{ position: relative; display: flex;justify-content: center; }
         .header video{height: 80vh;}
         .call {top: 30vh; width: 65vw;}
         #form-chimp {height: 70vh;}
+        .title-banner{font-size: 64px; width: 880px; flex-wrap: wrap; }
+        .sub-title-banner{font-size: 20px; line-height: 1.3em; width: 784px; flex-wrap: wrap;}
 }
