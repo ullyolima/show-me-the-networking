@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bee.Lieve</title>
+
+    <style>
+        /* CSS Custom Landing-page Bee.Lieve */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        /* Reset CSS */
+        abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+        .d-none{display: none !important;}
+
+        
+        /* ----- Header ----- */
+        header{position: relative; }
+        .top-bar{background-color: rgba(255, 255, 255, 0.0); position: fixed; width: 100%; padding: 20px 0;}
+        .top-bar .logo{width: 200px; padding: 10px 0;}
+        .top-bar .logo img{width: 100%;}
+        .top-bar .container{display: flex; justify-content: space-between; align-items: center;}
+        .top-bar .container .btn-inscreva{background-color: #FFC12A; padding: 15px 32px; border-radius: 4px; cursor: pointer; font-family: 'Roboto', sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 150%;}
+        .top-bar .container a{cursor: pointer; color: #000;}
+        .top-par .container .call {display: flex; flex-direction: column !important;}
+        .title-banner{font-family: 'Roboto', sans-serif;  font-style: normal; font-weight: bold; font-size: 64px; line-height: 120%; color: #FFFFFF; margin-top: 108px;}
+        .sub-title-banner{font-family: 'Roboto', sans-serif; font-style: normal; font-weight: 500; font-size: 20px; line-height: 120%; display: flex; align-items: center; color: #FFFFFF; margin-top: 16px; width: 784px; flex-wrap: wrap;}
+        video{width: 100%;}
+
+        @media screen and (max-width: 768px){
+            .top-bar .container{display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+        }
+
+
+        
+        /* ----- Popup de saida ----- */
+        body{ position: relative; display: flex;justify-content: center; }
+        #popup{ z-index: 9; margin: 0 auto; position: absolute; display: none; top: calc(90vh - 50%);}
+        #popup span{ position: absolute; z-index: 99; top: 5px; right: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<!-- INICIO - Section Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">
+                    <img src="beelieve.svg" class="img-responsive">
+                </div>
+                <a href="javascript:void(0)" class="btn-inscreva">Inscreva-se Grátis</a>
+            </div>
+            <div class="container">
+                <div class="call">
+                    <h2 class="title-banner">Como impor limite no trabalho em tempos de home office?</h2>
+                    <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 07/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
+                </div>
+            </div>
+        </div>
+        <video loop="true" muted="true" autoplay="true" src="banner.mp4"></video>
+    </header>
+<!-- FIM - Section Header -->
+
+
+<!-- INICIO - Section Evento -->
+<section class="evento">
+    <!--code here-->
+</section>
+<!-- FIM - Section Evento -->
+
+
+<!-- INICIO - Section Convidados -->
+<section class="convidados">
+    <!--code here-->
+</section>
+<!-- FIM - Section Convidados -->
+
+
+<!-- INICIO - Section Formulario -->
+<section class="formuario">
+    <!--code here-->
+</section>
+<!-- FIM - Section Formulario -->
+
+
+<!-- INICIO - Section Footer -->
+<section class="quem-somos">
+    <!--code here-->
+</section>
+<!-- <footer class="footer">        footer esta quebrando o popup aviso de saida... 
+    <code here
+</section> -->
+<!-- FIM - Section Footer -->
+
+
+
+    <div class="popup" id="popup">
+        <span class="close-popup">[ X ]</span>
+        <img src="popup.png" class="img-responsive">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $('body').on('mouseout', function() {
+            $('#popup').show();
+        });
+
+        $('body').on('click', '.close-popup', function() {
+            $('#popup').addClass('d-none');
+        });
+    </script>
+</body>
+</html>
