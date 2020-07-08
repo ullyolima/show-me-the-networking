@@ -198,10 +198,10 @@
         </div>
     </div>
     
-    <div class="popup" id="popup">
+    <!-- <div class="popup" id="popup">
         <span class="close-popup">[ X ]</span>
         <img src="img/popup.png" class="img-responsive">
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -214,18 +214,6 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
-
-    <script>
-        // Pop-up de saída
-
-        $('#main-site').on('mouseout', function () {
-            $('#popup').show();
-        });
-
-        $('#main-site').on('click', '.close-popup', function () {
-            $('#popup').addClass('d-none');
-        });
-    </script>
 </body>
 
 </html>
