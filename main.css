@@ -77,6 +77,26 @@ body{ position: relative; display: flex;justify-content: center; }
         .sub-title-banner{font-size: 20px; line-height: 1.3em; color: #FFFFFF; width: 100%; flex-wrap: wrap;}
 }
 
+.evento {
+        width: 100%;
+        margin: 48px 0;
+}
+
+.evento .content{
+        display: flex;
+        justify-content: space-between;
+}
+
+.evento .content .img{
+        background-color: #c4c4c4;
+        width: 428px;
+        height: 406px;       
+}
+
+.evento .content .img .imagem-evento{
+        width: 100%;
+}
+
 .evento .title .bar{
         position: relative;
         height: 3px;
@@ -92,7 +112,6 @@ body{ position: relative; display: flex;justify-content: center; }
         left: 530px;
         top: 645px;
         
-
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -110,7 +129,7 @@ body{ position: relative; display: flex;justify-content: center; }
 
 .evento .title{
         width: 100%;
-        margin-bottom: 32; 
+        margin-bottom: 24px; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,20 +141,12 @@ body{ position: relative; display: flex;justify-content: center; }
 }
 .evento .title1{
 
-        width: 373px;
-        height: 70px;
-        left: 117px;
-        top: 730px;
-        
+        width: 373px;       
+        margin-bottom: 18px; 
 
-        /* Title/title-h5 */
-
-        font-family: Roboto;
-        font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 120%;
-        /* identical to box height, or 29px */
 
         display: flex;
         align-items: center;
@@ -147,18 +158,14 @@ body{ position: relative; display: flex;justify-content: center; }
 
 .evento #txt1{
 
-        width: 485px;
-        height: 90px;
-        left: 117px;
-        top: 783px;
+        margin-bottom: 24px;
 
-        /* Body/body-1 */
-        font-family: Roboto;
-        font-style: normal;
+        width: 485px;     
+
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
-        /* or 24px */
+
         display: flex;
         align-items: center;
 
@@ -172,11 +179,8 @@ body{ position: relative; display: flex;justify-content: center; }
 .evento .title2{
 
         width: 332px;
-        height: 60px;
-        left: 117px;
-        top: 1033px;
-
-        /* Body/body-2 */
+      
+        margin-bottom: 14px;
 
         font-family: Roboto;
         font-style: normal;
