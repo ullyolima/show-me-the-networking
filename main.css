@@ -13,7 +13,6 @@ body {font-family: 'Roboto', sans-serif; font: 16px; width: 100%; height: 100%;}
 .content-box {position: relative; width: 100%; height:100%;}
 .header video{width: 100%; height: 100vh; object-fit: cover;}
 .top-bar {position: absolute; top: 32px; width: 100%; display: flex; flex-direction: column; align-items: center;}
-/* .top-bar .logo{ padding: 1.4em;} */
 .top-bar .btn-inscreva{background-color: #FFC12A; padding: 15px 32px; border-radius: 4px; cursor: pointer; font-family: 'Roboto', sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 150%;}
 .top-bar a{cursor: pointer; color: #000;}
 .call {position: absolute; left: 0; right: 0; top: 20vh; margin: auto auto; width: 84vw; display: flex; flex-direction: column;}
@@ -21,8 +20,6 @@ body {font-family: 'Roboto', sans-serif; font: 16px; width: 100%; height: 100%;}
 .title-banner{color: #FFFFFF; font-weight: bold; font-size: 64px; margin-bottom: .5em; width: 880px; flex-wrap: wrap; }
 .sub-title-banner{font-size: 20px; line-height: 1.3em; color: #FFFFFF; width: 784px; flex-wrap: wrap;}
 .event-mobile{display: none;}
-
-
 .top-bar .logo.desktop{display: block;}
 .top-bar .logo.mobile{display: none;}
         
@@ -74,9 +71,6 @@ form {padding: 2em;}
 .footer {background-color: #000; color: whitesmoke; font-size: .8em;padding: 1em 1.5em; line-height: 1.2em;}
 .footer .container{display: flex; justify-content: space-between; align-items: center;}
 .social-media a img {padding-right: 1em;}
-
-
-
 
 /* ----- Obrigado ----- */
 
@@ -155,6 +149,12 @@ body{ position: relative; display: flex;justify-content: center; }
 #popup{ z-index: 9; margin: 0 auto; position: absolute; display: none; top: calc(90vh - 30%);}
 #popup span{ position: absolute; z-index: 99; top: 5px; right: 5px; cursor: pointer; }
 
+/* Contagem regressiva */
+.contagem {width:40vw; height:40px; display: flex; justify-content: center; margin-top: 1em;}   
+.numero {min-width: 20px; max-width: 55px; background-color: #ffd5d3; color: #233fa5; font-size: 22px; margin: 5px; text-align: center; border-radius: 5px; padding: 5px;}
+.legenda {font-family:'Roboto', sans-serif; color: #233fa5; height: 25px; line-height: 10px; font-size:.7em; background-color: #ffffff; text-align: center; text-transform: uppercase;}
+.hide-contagem {display: none;}
+
 /*----- Media Query ----- */
 @media screen and (max-width: 320px) {
         form {padding: 1em;}
@@ -165,7 +165,9 @@ body{ position: relative; display: flex;justify-content: center; }
 @media screen and (min-width: 760px) {
         .header video{height: 55vh;}
         .top-bar {flex-direction: row; justify-content: space-around;}
+
         #form-chimp {background-image: url(./img/CapaLinkedIn-Bee.Lieve.webp); background-repeat: no-repeat; background-size: cover;}
+
         #mc_embed_signup {font-size: 14px; width: 350px; margin: 0 auto;}
 }
 
@@ -206,7 +208,8 @@ body{ position: relative; display: flex;justify-content: center; }
         video{display: none;}
         .call {position: absolute; left: 0; right: 0; top: 15vh; margin: auto auto; width: 84vw; display: flex; flex-direction: column;}
 
-
+        /* Contagem regressiva */
+        .contagem {width:40vw; height: 8vh;}   
 
         /* Evento */
         .evento .content .text .title{width: 100% !important;}
@@ -223,8 +226,6 @@ body{ position: relative; display: flex;justify-content: center; }
         .title-live { font-size: 34px; color: #fff; }
         .title-banner{color: #FFFFFF; font-weight: bold; font-size: 34px; margin-bottom: .5em; width: 100%; flex-wrap: wrap;}
         .sub-title-banner{font-size: 16px; line-height: 1.3em; color: #FFFFFF; width: 100%; flex-wrap: wrap;}
-
-
 
         /* ----- Convidados ----- */
         .convidados .container .convidadoUser{display: flex; flex-direction: column; margin-bottom: 20px;}
