@@ -33,7 +33,7 @@ setInterval(function () {
     minutos = parseInt(segundos_f / 60);
     segundos = parseInt(segundos_f % 60);
 
-    if (dias == 0 && horas == 0 && segundos <= 0) {
+    if (dias == 0 && horas == 0 && minutos == 0 && segundos <= 0) {
         document.getElementById('contagem').classList.add("hide-contagem");
     } else {
         document.getElementById('dia').innerHTML = dias;
