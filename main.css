@@ -210,14 +210,18 @@ body{ position: relative; display: flex;justify-content: center; }
         color: black;
 }
 
-.convidades .title .bar{
+.convidados .title .bar{
         position: relative;
         height: 3px;
         width: 100%;
         border: 3px solid #2E4BB2;
 }
 
-.convidades .title .txt{
+.convidados .container .title{
+        margin-bottom: 146px;
+}
+
+.convidados .title .txt{
 
         position: absolute;
         width: 288px;
@@ -241,125 +245,43 @@ body{ position: relative; display: flex;justify-content: center; }
         background-color: white;
 }
 
-.convidades .nomeConvidado{
+.convidados .container{
+        display: flex;
+        flex-direction: column;
+}
 
-        height: 50px;
+.convidados .container .convidadoUser{
+        display: flex;
+        justify-content: space-between;
+}
 
-        /* Body/body-1 */
-
-        font-family: Roboto;
-        font-style: normal;
+.convidados .container .txt .nome{
+        color: black;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        /* or 24px */
-
-        display: flex;
-        align-items: center;
-
-        color: #000000;
-
-}
-
-.convidades .convidado1 #fundo1{
-        /*position: relative;*/
-        left: 7.13%;
-        right: 60.12%;
-        top: 47.91%;
-        bottom: 43.54%;
-        z-index: 1;
-
-        /* Brand/blue-secondary */
-
-        background: #F49F9A url(primeiro_fundo.png);
-        transform: rotate(-24.22deg);
-}
-
-/*
-.convidades .convidado1 #imgConvidado1{
-        
-        left: 36.52%;
-        right: 39.58%;
-        top: 43.35%;
-        bottom: 40.51%;
-
-        background: url(RuiBrandao2.png);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-*/
-
-.convidades .nomeConvidado #nome1{
-
+        margin-bottom: 16px;
         width: 106px;
-        left: 496px;
-        top: 1368px;
+
 }
 
-.convidades .convidado1 #bio1{
+.convidados .container .txt .texto{
+        margin-bottom: 151.34px;
         width: 399px;
-        height: 100px;
-        left: 496px;
-        top: 1399px;
-
-        /* Body/body-1 */
-
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        /* or 24px */
-
-        display: flex;
-        align-items: center;
-        text-align: justify;
-
-        color: #000000;
 }
 
-.convidades .convidado2 #fundo2{
-
-        left: 95.2%;
-        right: -27.66%;
-        top: 57%;
-        bottom: 34.52%;
-
-        /* Brand/blue-primary */
-
-        background: #2E4BB2 url(segundo_fundo.png);
-        transform: rotate(144.46deg);
+.convidados .container .convidadoUser .img .background{
+        position: relative;
 }
 
-/*.convidades .convidado2 #imgConvidado2{
-        width: 455.25px;
-        height: 304.92px;
-        left: 1184.79px;
-        top: 1550.9px;
-
-        background: url(image3.png);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-}*/
-
-.convidades .nomeConvidado #nome2{
-        width: 121px;
-        height: 28px;
-        left: 706px;
-        top: 1636.34px;
+.convidados .container .convidadoUser .img .user1{
+        position: absolute;
+        left: 220px;
+        width: 300px;
+        
 }
 
-.convidades .convidado2 #bio2{
-        width: 399px;
-        height: 100px;
-        left: 437px;
-        top: 1680.34px;
-
-        /* Body/body-1 */
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        /* or 24px */
-
-        display: flex;
-        align-items: center;
-        text-align: justify;
-
-        color: #000000;
+.convidados .container .convidadoUser .img .user2{
+        position: absolute;
+        left: 890px;
+        width: 300px;
 }
+
