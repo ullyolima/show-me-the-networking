@@ -14,39 +14,37 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
-            <header class="header">
-                <video loop="true" muted="true" autoplay="true">
-                    <source src="./img/banner.webm" type="video/mp4">
-                </video>
-                <div class="top-bar">
-                    <div class="logo">
-                        <img src="./img/beelieve.svg" class="img-responsive">
+        <div class="header">
+            <div>
+                <header>
+                    <video loop="true" muted="true" autoplay="true">
+                        <source src="./img/banner.webm" type="video/mp4">
+                    </video>
+                    <div class="top-bar">
+                        <div class="logo desktop">
+                            <img src="./img/beelieve.svg" class="img-responsive ">
+                        </div>
+
+                        <div class="logo mobile">
+                            <img src="./img/bmobile.svg" class="img-responsive ">
+                        </div>
+
+                        <a href="#form-chimp" class="btn-inscreva">Inscreva-se Grátis</a>
                     </div>
-                    <a href="#form-chimp" class="btn-inscreva">Inscreva-se Grátis</a>
-                </div>
-            </header>
+                </header>
+            </div>
+
+            <div class="row call">
+                <b class="title-live">Burnout:</b>
+                <h2 class="title-banner">Como impor limite no trabalho em tempos de home office?</h2>
+                <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 08/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
+            </div>
         </div>
 
-        <div class="row call">
-            <b class="title-live">Burnout:</b>
-            <h2 class="title-banner">Como impor limite no trabalho em tempos de home office?</h2>
+        <div class="event-mobile">
             <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 08/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
         </div>
 
-        <style>
-            .evento{ width: 100%; margin:48px 0 ; }
-            .evento .title{ display: flex;align-items: center; justify-content: center; width: 100%; margin-bottom: 32px;}
-            .evento .title .bar{ width: 100%; height: 3px; background-color:#2E4BB2; position: relative;}
-            .evento .title .txt{position: absolute; color: #2E4BB2; background-color: #ffffff; padding: 0 93px; font-size: 32px; font-weight: bold;}
-
-            .evento .content{display: flex; justify-content: space-between; }
-            .evento .content .img{background: #C4C4C4; width: 428px; height: 406px;}
-            .evento .content .text .title{font-style: normal; font-weight: bold; font-size: 24px; line-height: 120%; display: flex; justify-content: flex-start; color: #000000; width: 373px; flex-wrap: wrap;}
-            .evento .content .text .message{font-style: normal; font-weight: normal; font-size: 16px; line-height: 150%; display: flex; align-items: center; color: #000000; width: 485px; flex-wrap: wrap; margin-bottom: 34px;}
-            .evento .content .text span{font-style: normal; font-weight: normal; font-size: 16px; line-height: 150%; display: flex; align-items: center; color: #000000;  margin-bottom: 7px;}
-            .evento .content .text ul li{line-height: 20px;}
-        </style>
         <div class="row evento">
             <div class="container">
                 <div class="title">
@@ -57,23 +55,27 @@
                 <div class="content">
                     <div class="text">
                         <h2 class="title">Sobre o que vamos falar</h2>
-                        <p class="message">Neste momento de muitas novidades: pandemia, home office, muito tempo em casa, algumas sensações também são novas. Vamos descobrir como tirar o lado bom disso tudo juntos!</p>
+                        <p class="message">O burnout se tornou oficialmente uma doença considerada pela OMS - Organização Mundial da Saúde.  O lado bom dessa história, se você está se identificando com esses sintomas, é que a doença tem cura. E você não está sozinho nessa. Estamos aqui pra tentar ajudar você a perceber sensibilidades na forma como você está levando seu dia a dia para identificar o que pode melhorar para ser feliz com o seu agora.</p>
 
                         <span>Sobre o que iremos</span>
                         <ul>
-                            <li>topico 1</li>
-                            <li>topico 2</li>
-                            <li>topico 3</li>
+                            <li>Existe lado positivo?</li>
+                            <li>Home office e os riscos de burnout</li>
+                            <li>Limites e a comunicação assertiva</li>
                         </ul>
+                        <div class="date">08 de julho de 2020 às 20h</div>
+                        <small>Evento online e gratuito</small>
+
+                        <a href="#form-chimp" class="btn-participe">Participe Gratuitamente</a>
                     </div>
                     <div class="img">
-
+                        <img src="img/evento.png" class="imagem-evento" />
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
-        <div class="row" id="form-chimp">
+        <div class="form-chimp" id="form-chimp">
             <!-- Begin Mailchimp Signup Form -->
             <div id="mc_embed_signup">
                 <form
@@ -100,6 +102,8 @@
                                 name="b_6850e12608d34d2034772849e_cc9f8f984b" tabindex="-1" value=""></div>
                         <div class="clear"><input type="submit" value="Inscreva-se grátis" name="subscribe"
                                 id="mc-embedded-subscribe" class="button"></div>
+
+                            <input name="redirectTo" type="hidden" value="https://www.beelieve.site/obrigado.html" />
                     </div>
                 </form>
             </div>
@@ -123,6 +127,18 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
+
+    <script>
+        // Pop-up de saída
+
+        $('body').on('mouseout', function() {
+            $('#popup').show();
+        });
+
+        $('body').on('click', '.close-popup', function() {
+            $('#popup').addClass('d-none');
+        });
+    </script>
 </body>
 
 </html>
