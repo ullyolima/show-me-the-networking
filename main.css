@@ -91,6 +91,65 @@ form {padding: 2em;}
 .thank .btn-compartilhar{background: #FFC12A; border-radius: 4px; padding: 8px 24px;}
 
 
+
+/* ----- Convidados ----- */
+
+.convidados {width: 100%; margin: 48px 0;}
+.convidados .title {display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 32px;}
+.convidados .title .bar {width: 100%; height: 3px; background-color: #2E4BB2; position: relative;}
+.convidados .title .txt {position: absolute; color: #2E4BB2; background-color: #ffffff; padding: 0 93px;font-size: 32px; font-weight: bold;}
+
+.convidados .container{
+        display: flex;
+        flex-direction: column;
+}
+
+.convidados .container .convidadoUser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.convidados .container .convidadoUser .img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.convidados .container .convidadoUser .txt{
+        display: flex;
+        align-items: center;
+}
+
+.convidados .container .convidadoUser .txt .nome{
+        color: black;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+}
+
+.convidados .container .convidadoUser .txt .texto{
+        width: 399px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        color: #000000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+}
+
+.convidados .container .convidadoUser .img .user{
+        position: absolute;
+        width: 300px;
+        
+}
+
+
+
+
 /* ----- Popup de saida ----- */
 body{ position: relative; display: flex;justify-content: center; }
 #popup{ z-index: 9; margin: 0 auto; position: absolute; display: none; top: calc(90vh - 30%);}
@@ -106,12 +165,8 @@ body{ position: relative; display: flex;justify-content: center; }
 @media screen and (min-width: 760px) {
         .header video{height: 55vh;}
         .top-bar {flex-direction: row; justify-content: space-around;}
-<<<<<<< HEAD
         #form-chimp {background-image: url(./img/CapaLinkedIn-Bee.Lieve.webp); background-repeat: no-repeat; background-size: cover;}
-=======
-        .call {top: 20vh; width: 75vw;}
         #mc_embed_signup {font-size: 14px; width: 350px; margin: 0 auto;}
->>>>>>> 3e00dee16cb2bc902405cb6f9cef1cdc15d576ce
 }
 
 @media screen and (min-width: 1000px) {
@@ -171,6 +226,16 @@ body{ position: relative; display: flex;justify-content: center; }
 
 
 
+        /* ----- Convidados ----- */
+        .convidados .container .convidadoUser{display: flex; flex-direction: column; margin-bottom: 20px;}
+        .convidados .container .convidadoUser.second-user{display: flex; flex-direction: column-reverse;}
+        
+        .convidados .title .txt {position: absolute; color: #2E4BB2; background-color: #ffffff; padding: 0 25px;font-size: 32px; font-weight: bold;}
+        .convidados .container .convidadoUser .img{width: 100%;}
+        .convidados .container .convidadoUser .img .background{ position: relative; display: flex; justify-content: center; align-items: center; width: 100%;}
+        .convidados .container .convidadoUser .img .user{ position: absolute; width: 70%; }
+        .convidados .container .convidadoUser .txt .nome{width: 100%;}
+        .convidados .container .convidadoUser .txt .texto{width: 100%;}
 
         /* ----- Obrigado ----- */
 
