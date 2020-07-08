@@ -134,13 +134,13 @@ form {padding: 2em;}
         
 }
 
-
-
-
 /* ----- Popup de saida ----- */
-body{ position: relative; display: flex;justify-content: center; }
-#popup{ z-index: 9; margin: 0 auto; position: absolute; display: none; top: calc(90vh - 30%);}
-#popup span{ position: absolute; z-index: 99; top: 5px; right: 5px; cursor: pointer; }
+.modal-overlay {background-color: rgba(0, 0, 0, 0.7); height: 100vh; width: 100vw; position: fixed; top: 0; opacity: 0; visibility: hidden;}
+.popup {position: fixed; margin: 0 auto; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0px 0px 50px 2px #000; padding-bottom: 5px;}
+.modal__close-icon {position: absolute; left: 93%; top: 2%; width: 100%; margin-right: 5px; cursor: pointer;}
+/* Popup ativo */    
+.modal-overlay.modal-overlay--active {opacity: 1; visibility: visible;}
+
 
 /* Contagem regressiva */
 .contagem {width:40vw; height:60px; display: flex; justify-content: center; margin-top: 1em;}   

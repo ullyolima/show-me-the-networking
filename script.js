@@ -1,12 +1,18 @@
 // Pop-up de saída
+let clicado = false
 
-$('body').on('mouseout', function () {
-    $('#popup').show();
-});
+function openModal() {
+    const closeModal = document.querySelector(".modal__close-icon")
+    const modalOverlay = document.querySelector(".modal-overlay")
 
-$('body').on('click', '.close-popup', function () {
-    $('#popup').addClass('d-none');
-});
+    if (!clicado) {
+        modalOverlay.classList.add("modal-overlay--active")
+        closeModal.addEventListener("click", function () {
+            modalOverlay.classList.remove("modal-overlay--active")
+        })
+        clicado = true;
+    }
+}
 
 // contagem regressiva
 
