@@ -11,7 +11,7 @@
     <title>Bee.Lieve</title>
 </head>
 
-<body>
+<body id="main-site">
 
     <div class="container-fluid">
         <div class="header">
@@ -34,16 +34,19 @@
                 </header>
             </div>
 
-            <div class="row call">
-                <b class="title-live">Burnout:</b>
-                <h2 class="title-banner">Como impor limite no trabalho em tempos de home office?</h2>
-                <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 08/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
+            <div class="call">
+                <div class="container">
+                    <b class="title-live">Burnout:</b>
+                    <h2 class="title-banner">Como impor limite no trabalho em tempos de home office?</h2>
+                    <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 08/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
+                </div>
             </div>
         </div>
 
         <div class="event-mobile">
             <p class="sub-title-banner">Como você está se sentindo? Feliz por não pegar mais trânsito ou exausto pela quantidade de informação? Seja o que for, nesta quarta, 08/07, às 20h, a gente vai falar sobre burnout e sua relação com o home office!</p>
         </div>
+
 
         <div class="row evento">
             <div class="container">
@@ -109,11 +112,32 @@
             </div>
             <!--End mc_embed_signup-->
         </div>
-    </div>
 
-    <!-- <div class="popup" id="popup">
+        <div class="section-resumo">
+            <div class="col-12">
+                <p>A Bee.Lieve é um coletivo de profissionais que se preocupam com a saúde mental de outros profissionais.
+                    Estamos focados na prevenção de doenças relacionadas ao trabalho, principalmente home office, e os
+                    desafios relacionados aos limites envolvidos nesse contexto.</p>            </div>
+        </div>
+
+        <div class="align-items-center footer">
+            <div class="container">
+                <p>&copy 2020 Bee.Lieve. All rights reserve</p> 
+                <div class="social-media">
+                    <a href="https://www.instagram.com/_bee.lieve/" target="_blank" ><img src="./img/instagram.webp" alt="Logo instagram"></a>
+                    <a href="https://www.facebook.com/beelievepsicologia/" target="_blank"><img src="./img/facebook.webp" alt="Logo facebook"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+<!-- 
+    <div class="popup" id="popup">
         <span class="close-popup">[ X ]</span>
-        <img src="/img/popup.png" class="img-responsive">
+        <img src="img/popup.png" class="img-responsive">
     </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -131,11 +155,11 @@
     <script>
         // Pop-up de saída
 
-        $('body').on('mouseout', function() {
+        $('#main-site').on('mouseout', function() {
             $('#popup').show();
         });
 
-        $('body').on('click', '.close-popup', function() {
+        $('#main-site').on('click', '.close-popup', function() {
             $('#popup').addClass('d-none');
         });
     </script>
