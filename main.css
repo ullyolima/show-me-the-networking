@@ -249,4 +249,8 @@ body{ position: relative; display: flex;justify-content: center; }
 
 
         .obrigado .header{background-color: #2E4BB2; position: relative; height: 0;}
+
+        #embed-live iframe{width: 100%;}
 }
+
+#embed-live{display: table; margin: 0 auto; margin-bottom: 25px;}
