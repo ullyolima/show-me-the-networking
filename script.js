@@ -1,21 +1,26 @@
 // Pop-up de saída
+let clicado = false
 
-$('body').on('mouseout', function() {
-    $('#popup').show();
-});
+function openModal() {
+    const closeModal = document.querySelector(".modal__close-icon")
+    const modalOverlay = document.querySelector(".modal-overlay")
 
-$('body').on('click', '.close-popup', function() {
-    $('#popup').addClass('d-none');
-});
+    if (!clicado) {
+        modalOverlay.classList.add("modal-overlay--active")
+        closeModal.addEventListener("click", function () {
+            modalOverlay.classList.remove("modal-overlay--active")
+        })
+        clicado = true;
+    }
+}
 
 // contagem regressiva
 
-var target_date = new Date("jul 08, 2020 20:00:00").getTime();
-var dias, horas, minutos, segundos;
-var regressiva = document.getElementById("regressiva");
-
 setInterval(function () {
 
+    var target_date = new Date("jul 08, 2020 20:00:00").getTime();
+    var dias, horas, minutos, segundos;
+    var regressiva = document.getElementById("regressiva")
     var current_date = new Date().getTime();
     var segundos_f = (target_date - current_date) / 1000;
 
@@ -28,7 +33,7 @@ setInterval(function () {
     minutos = parseInt(segundos_f / 60);
     segundos = parseInt(segundos_f % 60);
 
-    if (segundos <= 0) {
+    if (dias <= 0 && horas <= 0 && minutos <= 0 && segundos <= 0) {
         document.getElementById('contagem').classList.add("hide-contagem");
     } else {
         document.getElementById('dia').innerHTML = dias;

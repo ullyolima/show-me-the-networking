@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="./img/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <title>Bee.Lieve</title>
 
@@ -28,7 +29,7 @@
     </script>
 </head>
 
-<body id="main-site">
+<body onmouseleave="openModal(this)" id="main-site">
 
     <div class="container-fluid">
         <div class="header">
@@ -46,7 +47,7 @@
                             <img src="./img/bmobile.svg" alt="Logo beelieve" class="img-responsive ">
                         </div>
 
-                        <a href="#form-chimp" class="btn-inscreva">Inscreva-se Grátis</a>
+                        <a href="https://www.youtube.com/watch?v=9b3e87LV9dk" class="btn-inscreva">Acesse a live</a>
                     </div>
                 </header>
             </div>
@@ -147,15 +148,16 @@
                         <div class="date">08 de julho de 2020 às 20h</div>
                         <small>Evento online e gratuito</small>
 
-                        <a href="#form-chimp" class="btn-participe">Participe Gratuitamente</a>
+                        <a href="https://www.youtube.com/watch?v=9b3e87LV9dk" class="btn-participe">Acesse a live</a>
                     </div>
                     <div class="img">
-                        <img src="img/evento.png" alt="Card divulgando live" class="imagem-evento" />
+                        <img src="./img/evento.webp" alt="Card divulgando live com data e hora do evento"
+                            class="imagem-evento" />
                     </div>
                 </div>
             </div>
-        </div> 
- 
+        </div>
+
 
 
         <div class="row convidados">
@@ -169,30 +171,36 @@
                     <div class="container">
                         <div class="convidadoUser">
                             <div class="img">
-                                <img src="img/background1.svg" class="background">
-                                <img src="img/ruiBrandao.svg" class="user">
+                                <img src="img/background1.svg" alt="Desenho de uma forma líquida rosa atrás da foto"
+                                    class="background">
+                                <img src="img/ruiBrandao.svg" alt="Foto de Rui Brandão" class="user">
                             </div>
                             <div class="txt">
                                 <div>
                                     <div class="nome">Rui Brandão</div>
-                                    <div class="texto">É médico, CEO e Co-founder da @zenklub e estará conosco na live de hoje!
-                                        Vamos falar sobre o Burnout, o que é, seus sintomas e quando/como procurar ajuda.</div>
+                                    <div class="texto">É médico, CEO e Co-founder da @zenklub e estará conosco na live
+                                        de hoje!
+                                        Vamos falar sobre o Burnout, o que é, seus sintomas e quando/como procurar
+                                        ajuda.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="convidadoUser second-user">
-                            <div class="txt"> 
+                            <div class="txt">
                                 <div>
                                     <div class="nome">Isaura Fonseca</div>
-                                    <div class="texto">É pedagoga, graduada em Gestão de RH, atua como Analista de RH em uma startup e estará conosco na live de hoje!
-                                        Vamos falar sobre o Burnout, os limites do trabalho, comunicação assertiva e efetiva!</div>
+                                    <div class="texto">É pedagoga, graduada em Gestão de RH, atua como Analista de RH em
+                                        uma startup e estará conosco na live de hoje!
+                                        Vamos falar sobre o Burnout, os limites do trabalho, comunicação assertiva e
+                                        efetiva!</div>
                                 </div>
                             </div>
                             <div class="img">
-                                <img src="img/background2.svg" class="background">
-                                <img src="img/isauraFonseca.svg" class="user">
+                                <img src="img/background2.svg" alt="Desenho de uma forma líquida rosa atrás da foto"
+                                    class="background">
+                                <img src="img/isauraFonseca.svg" alt="Foto Isaura Fonseca" class="user">
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -228,7 +236,7 @@
                         <div class="clear"><input type="submit" value="Inscreva-se grátis" name="subscribe"
                                 id="mc-embedded-subscribe" class="button"></div>
 
-                        <input name="redirectTo" type="hidden" value="https://www.beelieve.site/obrigado.html" />
+                        <input name="redirectTo" type="hidden" value="https://www.youtube.com/watch?v=9b3e87LV9dk" />
                     </div>
                 </form>
             </div>
@@ -248,19 +256,25 @@
             <div class="container">
                 <p>&copy 2020 Bee.Lieve. All rights reserve</p>
                 <div class="social-media">
-                    <a href="https://www.instagram.com/_bee.lieve/" target="_blank" rel="noreferrer"><img src="./img/instagram.webp"
-                            alt="Logo instagram"></a>
+                    <a href="https://www.instagram.com/_bee.lieve/" target="_blank" rel="noreferrer"><img
+                            src="./img/instagram.webp" alt="Logo instagram"></a>
                     <a href="https://www.facebook.com/beelievepsicologia/" target="_blank" rel="noreferrer"><img
                             src="./img/facebook.webp" alt="Logo facebook"></a>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- <div class="popup" id="popup">
-        <span class="close-popup">[ X ]</span>
-        <img src="img/popup.png" class="img-responsive">
-    </div> -->
+
+    <div class="modal-overlay">
+        <div class="popup">
+            <div>
+                <a class="modal__close-icon">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+            <img src="./img/evento.webp" alt="Card divulgando a live com data e hora do evento">
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
