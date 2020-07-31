@@ -1,19 +1,19 @@
-## Show me the networking
+# Show me the networking
 
 Este projeto foi desenvolvido durante um desafio do Gama Experience; o site foi construído com o objetivo de centralizar informações sobre um evento online cujo o tema era saúde mental.
 
-### Deploy
+## Deploy
 
 [Clique aqui](https://www.beelieve.site/) para visualizar o resultado. 
 
 ❗Aviso: Site temporariamente fora do ar.
 
-### Desenvolvedores
+## Desenvolvedores
 
 | [<img src="https://avatars1.githubusercontent.com/u/48460171?s=400&u=3575aa416914c013e7f5fc43a20c69f6be042b2a&v=4" width=115><br><sub>Ully Lima</sub>](https://github.com/ullyolima) | [<img src="https://avatars0.githubusercontent.com/u/17436856?s=400&u=06f833db45f6dd4b1e7a74279c2ba3f0b9439e09&v=4" width=115><br><sub>Bruno Silva</sub>](https://github.com/brunosilva) | [<img src="https://avatars0.githubusercontent.com/u/60198926?s=400&u=3358dd56ed4176400c61b9703be9199bbea0e016&v=4" width=115><br><sub>Aldy Souza</sub>](https://github.com/AldySouza) |
 | :---: | :---: | :---: 
 
-### Informações sobre o projeto
+## Informações sobre o projeto
 
 - Projeto desenvolvido em hard code a partir de um protótipo criado por designers do grupo.
 - O Bootstrap foi utilizado para itens básicos como definir containers e rows, para facilitar e agilizar o desenvolvimento.
@@ -27,7 +27,7 @@ Este projeto foi desenvolvido durante um desafio do Gama Experience; o site foi 
 - Utilizamos o formato webP em imagens e webM no vídeo do banner.
 - Utilizamos o atributo rel="noreferrer" em links de redirecionamento de página.
 
-### Tecnologias utilizadas 
+## Tecnologias utilizadas 
 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" width=40 align="center"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/100px-CSS3_logo_and_wordmark.svg.png" width=30 align="center"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" width=40 align="center"> | <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/bootstrap-4-logo.png" width=45 align="center"> |
 | :---: | :---: | :---: | :---: 
