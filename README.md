@@ -6,7 +6,7 @@
 
 [Clique aqui](https://www.beelieve.site/) para visualizar o resultado. 
 
-> ❗Aviso: Site temporariamente fora do ar.
+❗Aviso: Site temporariamente fora do ar.
 
 ## Desenvolvedores
 
